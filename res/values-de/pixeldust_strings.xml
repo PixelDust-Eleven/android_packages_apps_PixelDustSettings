@@ -165,4 +165,9 @@
     <string name="clock_date_left">Links neben der Uhrzeit</string>
     <string name="clock_date_position">Datumsanzeige positionieren</string>
 
+    <!-- Media art -->
+    <string name="lockscreen_media_category">Musik</string>
+    <string name="media_art_title">Albumcover</string>
+    <string name="media_art_summary">Albumcover auf dem Sperrbildschirm anzeigen</string>
+
 </resources>
