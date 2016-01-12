@@ -290,4 +290,8 @@
 
     <!-- Lock screen media blur -->
     <string name="lockscreen_media_blur_title">Unschärfegrad für Anzeige von Mediengrafiken</string>
+
+    <!-- Show QS on lockscreen -->
+    <string name="show_qs_on_secure_keyguard_title">Schnelleinstellungen</string>
+    <string name="show_qs_on_secure_keyguard_summary">Schnelleinstellungen bei einer sicheren Bildschirmsperre anzeigen</string>
 </resources>
