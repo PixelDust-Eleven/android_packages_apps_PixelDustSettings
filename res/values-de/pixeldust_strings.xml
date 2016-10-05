@@ -49,4 +49,8 @@
     <string name="color_default">Standard</string>
     <string name="longpress_info">Taste lange drücken, um die Farbe zu speichern</string>
 
+    <!--SystemUI Tuner -->
+    <string name="statusbar_tuner_title">Symbole in der Statusleiste</string>
+    <string name="statusbar_tuner_summary">Anzeige der Systemsymbole in der Statusleiste anpassen</string>
+
 </resources>

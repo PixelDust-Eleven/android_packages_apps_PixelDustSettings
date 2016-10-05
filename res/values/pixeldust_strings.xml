@@ -52,4 +52,8 @@
     <string name="color_down_arrow" translatable="false">"↓"</string>
     <string name="longpress_info">Longpress box to save color</string>
 
+    <!--SystemUI Tuner -->
+    <string name="statusbar_tuner_title">Statusbar Items</string>
+    <string name="statusbar_tuner_summary">Select which statusbar icons to disable</string>
+
 </resources>
