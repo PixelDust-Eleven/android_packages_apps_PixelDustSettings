@@ -65,4 +65,22 @@
     <string name="status_bar_am_pm_small">Klein</string>
     <string name="status_bar_am_pm_hidden">Nicht anzeigen (Standard)</string>
 
+    <!-- Global Actions -->
+    <string name="global_actions_title">Power Menü</string>
+    <string name="global_actions_summary">Festlegen was nach Drücken der Power-Taste angezeigt werden soll</string>
+    <string name="global_actions_power">Herunterfahren</string>
+    <string name="global_actions_restart">Neustart</string>
+    <string name="global_actions_airplane">Flugmodus</string>
+    <string name="global_actions_settings">Einstellungen</string>
+    <string name="global_actions_lockdown">Sperren</string>
+    <string name="global_actions_users">Benutzer</string>
+    <string name="global_actions_screenshot">Screenshot</string>
+    <string name="global_actions_screenrecord">Bildschirmaufzeichnung</string>
+    <string name="global_actions_flashlight">Taschenlampe</string>
+    <string name="global_actions_emergency">Notfall</string>
+    <string name="global_actions_advanced_reboot_title">Erweiterten Neustart aktivieren</string>
+    <string name="global_actions_advanced_reboot_summary">Beim Neustart auch Optionen für die Wiederherstellung und den Bootloader anzeigen</string>
+    <string name="global_actions_max_columns_title">Maximale Anzahl Aktionen</string>
+    <string name="global_actions_max_columns_summary">Konfigurieren wie viele Aktionen angezeigt werden sollen, bevor die Schaltflächen in das Überlaufmenü verschoben werden</string>
+
 </resources>
