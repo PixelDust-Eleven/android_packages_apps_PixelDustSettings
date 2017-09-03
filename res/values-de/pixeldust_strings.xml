@@ -101,4 +101,12 @@
     <!-- Lockscreen icons -->
     <string name="lockscreen_tuner_title">Verknüpfungen auf dem Sperrbildschirm</string>
 
+    <!-- Torch Power button gestures -->
+    <string name="hardware_keys_power_key_title">Ein-/Aus-Taste</string>
+    <string name="torch_power_button_gesture_title">Taschenlampen-Funktion bei ausgeschaltetem Bildschirm</string>
+    <string name="torch_power_button_gesture_none">Ausgeschaltet</string>
+    <string name="torch_power_button_gesture_dt">Zum Einschalten der Taschenlampe Ein-/Aus-Taste doppelt drücken (kleine Verzögerung zum einfachem Tippen)</string>
+    <string name="torch_power_button_gesture_dt_toast">Die Geste für den Einsprung zur Kamera ist jetzt deaktiviert</string>
+    <string name="torch_power_button_gesture_lp">Ein-/Aus-Taste lange drücken zum Anschalten der Taschenlampe</string>
+
 </resources>
