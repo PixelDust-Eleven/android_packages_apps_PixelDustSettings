@@ -283,4 +283,8 @@
     <string name="content_padding">Abstand zum Inhalt</string>
     <string name="corner_fwvals">Standardwerte verwenden</string>
     <string name="unit_pixels">dp</string>
+
+    <!-- Wakeup options -->
+    <string name="wakeup_when_plugged_unplugged_title">Bildschirm beim Ladevorgang einschalten</string>
+    <string name="wakeup_when_plugged_unplugged_summary">Bildschirm einschalten sobald Ladegerät angeschlossen/entfernt wird.</string>
 </resources>
