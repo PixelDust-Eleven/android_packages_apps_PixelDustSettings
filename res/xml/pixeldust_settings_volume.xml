@@ -36,4 +36,9 @@
         android:key="volume_key_cursor_control"
         android:title="@string/volume_key_cursor_control_title" />
 
+    <PreferenceScreen
+        android:key="volume_steps"
+        android:title="@string/volume_steps_title"
+        android:fragment="com.pixeldust.settings.fragments.VolumeSteps" />
+
 </PreferenceScreen>
