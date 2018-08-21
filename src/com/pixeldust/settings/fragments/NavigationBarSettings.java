@@ -20,6 +20,7 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.provider.SearchIndexableResource;
@@ -32,30 +33,35 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
 
+import com.android.internal.logging.nano.MetricsProto;
+import com.android.internal.util.pixeldust.PixeldustUtils;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
-
-import com.android.internal.logging.nano.MetricsProto;
-import com.android.internal.util.pixeldust.PixeldustUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 @SearchIndexable
-public class NavigationBarSettings extends SettingsPreferenceFragment {
+public class NavigationBarSettings extends SettingsPreferenceFragment implements
+        OnPreferenceChangeListener {
 
     private static final String GESTURE_SYSTEM_NAVIGATION = "gesture_system_navigation";
     private static final String PIXEL_NAV_ANIMATION = "pixel_nav_animation";
     private static final String LAYOUT_SETTINGS = "navbar_layout_views";
     private static final String NAVIGATION_BAR_INVERSE = "navbar_inverse_layout";
+    private static final String NAVBAR_VISIBILITY = "navbar_visibility";
 
+    private SwitchPreference mNavbarVisibility;
     private Preference mGestureSystemNavigation;
     private SwitchPreference mPixelNavAnimation;
     private Preference mLayoutSettings;
     private SwitchPreference mSwapNavButtons;
+
+    private boolean mIsNavSwitchingMode = false;
+    private Handler mHandler;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -82,6 +88,43 @@ public class NavigationBarSettings extends SettingsPreferenceFragment {
             prefScreen.removePreference(mPixelNavAnimation);
             prefScreen.removePreference(mSwapNavButtons);
         }
+
+        mNavbarVisibility = (SwitchPreference) findPreference(NAVBAR_VISIBILITY);
+
+        boolean defaultToNavigationBar = PixeldustUtils.deviceSupportNavigationBar(getActivity());
+        boolean showing = Settings.System.getInt(getContentResolver(),
+                Settings.System.FORCE_SHOW_NAVBAR,
+                defaultToNavigationBar ? 1 : 0) != 0;
+        updateBarVisibleAndUpdatePrefs(showing);
+        mNavbarVisibility.setOnPreferenceChangeListener(this);
+
+        mHandler = new Handler();
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference.equals(mNavbarVisibility)) {
+            if (mIsNavSwitchingMode) {
+                return false;
+            }
+            mIsNavSwitchingMode = true;
+            boolean showing = ((Boolean)newValue);
+            Settings.System.putInt(getContentResolver(), Settings.System.FORCE_SHOW_NAVBAR,
+                    showing ? 1 : 0);
+            updateBarVisibleAndUpdatePrefs(showing);
+            mHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    mIsNavSwitchingMode = false;
+                }
+            }, 1500);
+            return true;
+        }
+        return false;
+    }
+
+    private void updateBarVisibleAndUpdatePrefs(boolean showing) {
+        mNavbarVisibility.setChecked(showing);
     }
 
     @Override

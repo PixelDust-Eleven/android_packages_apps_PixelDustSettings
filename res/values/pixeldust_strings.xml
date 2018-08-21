@@ -211,4 +211,7 @@
     <string name="traffic_statusbar">Statusbar</string>
     <string name="traffic_expanded_statusbar">Expanded statusbar header</string>
     <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
+
+    <!-- NavBar Visibility -->
+    <string name="navbar_visibility">Enable Navigation Bar</string>
 </resources>
