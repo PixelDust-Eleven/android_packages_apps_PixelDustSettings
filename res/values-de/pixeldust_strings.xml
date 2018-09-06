@@ -83,4 +83,16 @@
     <string name="global_actions_max_columns_title">Maximale Anzahl Aktionen</string>
     <string name="global_actions_max_columns_summary">Konfigurieren wie viele Aktionen angezeigt werden sollen, bevor die Schaltflächen in das Überlaufmenü verschoben werden</string>
 
+    <!-- Battery light -->
+    <string name="battery_light_settings">LED für Akkustand</string>
+    <string name="battery_light_summary">Anzeigeoptionen für Akkustand-LED anpassen</string>
+    <string name="battery_light_enable">LED-Anzeige für den Akkustand aktivieren</string>
+    <string name="battery_light_allow_on_dnd_title">LED-Anzeige im Modus \"Nicht stören\"</string>
+    <string name="battery_light_low_blinking_title">Blinkende LED-Anzeige bei niedrigem Akkustand</string>
+    <string name="battery_light_cat">LED-Anzeige beim Aufladen</string>
+    <string name="battery_light_low_color">Niedriger Akkustand</string>
+    <string name="battery_light_medium_color">Mittlerer Akkustand</string>
+    <string name="battery_light_full_color">Fast voller Akkustand</string>
+    <string name="battery_light_reallyfull_color">Voller Akkustand</string>
+
 </resources>

@@ -18,4 +18,10 @@
     android:title="@string/notifications_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+        <Preference
+            android:key="charging_light"
+            android:title="@string/battery_light_settings"
+            android:summary="@string/battery_light_summary"
+            android:fragment="com.pixeldust.settings.fragments.BatteryLightSettings" />
+
 </PreferenceScreen>
