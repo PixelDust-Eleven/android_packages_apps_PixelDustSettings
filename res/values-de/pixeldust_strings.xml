@@ -95,4 +95,7 @@
     <string name="battery_light_full_color">Fast voller Akkustand</string>
     <string name="battery_light_reallyfull_color">Voller Akkustand</string>
 
+    <!-- Navbar tuner -->
+    <string name="navbar_tuner_title">Tuner für Navigationsleiste</string>
+
 </resources>
