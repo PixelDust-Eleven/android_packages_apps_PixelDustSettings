@@ -322,4 +322,9 @@
     <string name="volume_panel_compact">Kompakt</string>
     <string name="volume_panel_oreo">Oreo</string>
     <string name="volume_panel_tiled">Gekachelt</string>
+
+    <!-- App List -->
+    <string name="profile_choose_app">Anwendung auswählen</string>
+    <string name="dialog_delete_title">Löschen</string>
+    <string name="dialog_delete_message">Markiertes Element löschen?</string>
 </resources>
