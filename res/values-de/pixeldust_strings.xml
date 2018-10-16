@@ -141,4 +141,10 @@
     <string name="volume_key_cursor_control_on">Lautstärke hoch/runter verschiebt den Cursor nach links/rechts</string>
     <string name="volume_key_cursor_control_on_reverse">Lautstärke hoch/runter verschiebt den Cursor nach rechts/links</string>
 
+    <!-- Quick pull down-->
+    <string name="status_bar_quick_qs_pulldown">QS Panel schnell herunterziehen</string>
+    <string name="quick_pulldown_none">Aus</string>
+    <string name="quick_pulldown_right">Statusleiste von rechts herunterziehen</string>
+    <string name="quick_pulldown_left">Statusleiste von links herunterziehen</string>
+
 </resources>
