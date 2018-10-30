@@ -109,4 +109,8 @@
     <string name="torch_power_button_gesture_dt_toast">Die Geste für den Einsprung zur Kamera ist jetzt deaktiviert</string>
     <string name="torch_power_button_gesture_lp">Ein-/Aus-Taste lange drücken zum Anschalten der Taschenlampe</string>
 
+    <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">Pixel Animation</string>
+    <string name="pixel_navbar_anim_summary">Animation der Home-Taste aktivieren</string>
+
 </resources>
