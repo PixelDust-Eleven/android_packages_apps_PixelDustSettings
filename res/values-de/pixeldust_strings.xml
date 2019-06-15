@@ -178,4 +178,8 @@
     <string name="lockscreen_albumart_filter_blur">Verschwommen</string>
     <string name="lockscreen_albumart_filter_grayblur">Graustufen und verschwommen</string>
 
+    <!-- Charging animation -->
+    <string name="lockscreen_charging_animation_title">Ladeanimation</string>
+    <string name="lockscreen_charging_animation_summary">Eine schicke Animation anzeigen, wenn das Gerät aufgeladen wird</string>
+
 </resources>
