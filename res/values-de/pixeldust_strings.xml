@@ -98,6 +98,11 @@
 
     <!-- Navbar options -->
     <string name="navbar_invert_layout_title">Layout umkehren</string>
+    <string name="navbar_layout_title">Layout</string>
+    <string name="navbar_layout_normal">Normal</string>
+    <string name="navbar_layout_compact">Kompakt</string>
+    <string name="navbar_layout_leftleaning">Linksbündig</string>
+    <string name="navbar_layout_rightleaning">Rechtsbündig</string>
 
     <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Pixel Animation</string>

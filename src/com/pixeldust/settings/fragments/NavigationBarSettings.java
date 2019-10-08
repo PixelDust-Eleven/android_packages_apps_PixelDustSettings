@@ -49,9 +49,13 @@ public class NavigationBarSettings extends SettingsPreferenceFragment {
 
     private static final String GESTURE_SYSTEM_NAVIGATION = "gesture_system_navigation";
     private static final String PIXEL_NAV_ANIMATION = "pixel_nav_animation";
+    private static final String LAYOUT_SETTINGS = "navbar_layout_views";
+    private static final String NAVIGATION_BAR_INVERSE = "navbar_inverse_layout";
 
     private Preference mGestureSystemNavigation;
     private SwitchPreference mPixelNavAnimation;
+    private Preference mLayoutSettings;
+    private SwitchPreference mSwapNavButtons;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -61,8 +65,14 @@ public class NavigationBarSettings extends SettingsPreferenceFragment {
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
         mGestureSystemNavigation = (Preference) findPreference(GESTURE_SYSTEM_NAVIGATION);
-
         mPixelNavAnimation = (SwitchPreference) findPreference(PIXEL_NAV_ANIMATION);
+        mLayoutSettings = (Preference) findPreference(LAYOUT_SETTINGS);
+        mSwapNavButtons = (SwitchPreference) findPreference(NAVIGATION_BAR_INVERSE);
+
+        if (!PixeldustUtils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
+            prefScreen.removePreference(mLayoutSettings);
+        }
+
         if (PixeldustUtils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
             mGestureSystemNavigation.setSummary(getString(R.string.legacy_navigation_title));
         } else if (PixeldustUtils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton")) {
@@ -70,6 +80,7 @@ public class NavigationBarSettings extends SettingsPreferenceFragment {
         } else {
             mGestureSystemNavigation.setSummary(getString(R.string.edge_to_edge_navigation_title));
             prefScreen.removePreference(mPixelNavAnimation);
+            prefScreen.removePreference(mSwapNavButtons);
         }
     }
 
