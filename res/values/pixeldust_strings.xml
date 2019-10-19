@@ -289,4 +289,7 @@
     <!-- Wakeup options -->
     <string name="wakeup_when_plugged_unplugged_title">Wake up on charge</string>
     <string name="wakeup_when_plugged_unplugged_summary">Wake up device if charger is plugged/unplugged.</string>
+
+    <!-- Lock screen media blur -->
+    <string name="lockscreen_media_blur_title">Media artwork blur level</string>
 </resources>

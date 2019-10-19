@@ -287,4 +287,7 @@
     <!-- Wakeup options -->
     <string name="wakeup_when_plugged_unplugged_title">Bildschirm beim Ladevorgang einschalten</string>
     <string name="wakeup_when_plugged_unplugged_summary">Bildschirm einschalten sobald Ladegerät angeschlossen/entfernt wird.</string>
+
+    <!-- Lock screen media blur -->
+    <string name="lockscreen_media_blur_title">Unschärfegrad für Anzeige von Mediengrafiken</string>
 </resources>
