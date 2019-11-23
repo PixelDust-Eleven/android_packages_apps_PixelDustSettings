@@ -274,4 +274,13 @@
     <string name="pulse_custom_div">Abstand der Balken</string>
     <string name="pulse_filled_block_size">Blockgröße</string>
     <string name="pulse_empty_block_size">Blockabstände</string>
+
+    <!-- Rounded corners -->
+    <string name="corners_category_title">Abgerundete Ecken</string>
+    <string name="corners_category_summary">Eckenradius und Abstände einstellen</string>
+    <string name="corners_title">Abgerundete Ecken anpassen</string>
+    <string name="corner_radius">Radius der abgerundeten Ecken</string>
+    <string name="content_padding">Abstand zum Inhalt</string>
+    <string name="corner_fwvals">Standardwerte verwenden</string>
+    <string name="unit_pixels">dp</string>
 </resources>
