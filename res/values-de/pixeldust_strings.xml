@@ -207,7 +207,7 @@
     <string name="net_monitor_category_title">Netzwerkmonitor</string>
     <string name="network_traffic_location">Netzwerkaktivität anzeigen</string>
     <string name="traffic_disabled">Aus</string>
-    <string name="traffic_statusbar">Statusbar</string>
-    <string name="traffic_expanded_statusbar">Erweiterte Statusbar</string>
+    <string name="traffic_statusbar">Statusleiste</string>
+    <string name="traffic_expanded_statusbar">Erweiterte Statusleiste</string>
     <string name="network_traffic_autohide_threshold_title">Netzwerkaktivität anzeigen ab (KB/s)</string>
 </resources>
