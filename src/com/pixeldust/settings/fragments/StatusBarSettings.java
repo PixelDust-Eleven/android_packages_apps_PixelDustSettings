@@ -271,12 +271,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                 // And also enable the net monitor
                 Settings.System.putIntForUser(getActivity().getContentResolver(),
                         Settings.System.NETWORK_TRAFFIC_STATE, 1, UserHandle.USER_CURRENT);
-                updateTrafficLocation(location+1);
             } else { // Disable net monitor completely
                 Settings.System.putIntForUser(getActivity().getContentResolver(),
                         Settings.System.NETWORK_TRAFFIC_STATE, 0, UserHandle.USER_CURRENT);
-                updateTrafficLocation(location);
             }
+            updateTrafficLocation(location);
             return true;
         } else if (preference == mThreshold) {
             int val = (Integer) objValue;
