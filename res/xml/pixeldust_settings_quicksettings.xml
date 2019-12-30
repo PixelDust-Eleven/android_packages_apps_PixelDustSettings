@@ -33,4 +33,19 @@
         android:summary="@string/qs_show_drag_handle_summary"
         android:defaultValue="true" />
 
+    <!-- Battery percent -->
+    <com.pixeldust.settings.preferences.SystemSettingListPreference
+        android:key="qs_show_battery_percent"
+        android:title="@string/battery_percentage_title"
+        android:entries="@array/battery_percent_entries"
+        android:entryValues="@array/battery_percent_values"
+        android:defaultValue="2" />
+
+    <!-- Battery estimate -->
+    <com.pixeldust.settings.preferences.SystemSettingSwitchPreference
+        android:key="qs_show_battery_estimate"
+        android:title="@string/battery_estimate_title"
+        android:summary="@string/battery_estimate_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
