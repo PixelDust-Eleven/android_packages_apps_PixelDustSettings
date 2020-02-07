@@ -83,7 +83,9 @@
     <string name="global_actions_max_columns_title">Maximale Anzahl Aktionen</string>
     <string name="global_actions_max_columns_summary">Konfigurieren wie viele Aktionen angezeigt werden sollen, bevor die Schaltflächen in das Überlaufmenü verschoben werden</string>
 
-    <!-- Battery light -->
+    <!-- Notifications & Battery light -->
+    <string name="light_category_title">LED-Optionen</string>
+    <string name="notification_light_settings">LED für Benachrichtigungen</string>
     <string name="battery_light_settings">LED für Akkustand</string>
     <string name="battery_light_summary">Anzeigeoptionen für Akkustand-LED anpassen</string>
     <string name="battery_light_enable">LED-Anzeige für den Akkustand aktivieren</string>
