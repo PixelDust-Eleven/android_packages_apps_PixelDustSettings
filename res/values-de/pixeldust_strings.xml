@@ -104,6 +104,8 @@
     <string name="navbar_layout_compact">Kompakt</string>
     <string name="navbar_layout_leftleaning">Linksbündig</string>
     <string name="navbar_layout_rightleaning">Rechtsbündig</string>
+    <string name="navigation_bar_arrow_keys_title">Cursortasten während der Eingabe anzeigen</string>
+    <string name="navigation_bar_arrow_keys_summary">Während der Eingabe wird jeweils links und rechts eine Cursortaste in der Navigationsleiste angezeigt</string>
 
     <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Pixel Animation</string>
