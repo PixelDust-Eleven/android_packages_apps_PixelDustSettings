@@ -38,6 +38,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
 
 import com.android.internal.logging.nano.MetricsProto;
+import com.android.internal.util.pixeldust.PixeldustUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -46,11 +47,24 @@ import java.util.List;
 @SearchIndexable
 public class NavigationBarSettings extends SettingsPreferenceFragment {
 
+    private static final String GESTURE_SYSTEM_NAVIGATION = "gesture_system_navigation";
+
+    private Preference mGestureSystemNavigation;
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
         addPreferencesFromResource(R.xml.pixeldust_settings_navigation);
+
+        mGestureSystemNavigation = (Preference) findPreference(GESTURE_SYSTEM_NAVIGATION);
+        if (PixeldustUtils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
+            mGestureSystemNavigation.setSummary(getString(R.string.legacy_navigation_title));
+        } else if (PixeldustUtils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton")) {
+            mGestureSystemNavigation.setSummary(getString(R.string.swipe_up_to_switch_apps_title));
+        } else {
+            mGestureSystemNavigation.setSummary(getString(R.string.edge_to_edge_navigation_title));
+        }
     }
 
     @Override
