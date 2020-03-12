@@ -31,6 +31,13 @@
         android:summary="@string/lockscreen_charging_current_summary"
         android:defaultValue="true" />
 
+    <com.pixeldust.settings.preferences.SystemSettingListPreference
+        android:key="lockscreen_charging_animation_style"
+        android:title="@string/lockscreen_charging_animation_title"
+        android:entries="@array/lockscreen_charging_animation_entries"
+        android:entryValues="@array/lockscreen_charging_animation_values"
+        android:defaultValue="1" />
+
     <PreferenceCategory
         android:key="lockscreen_media_category"
         android:title="@string/lockscreen_media_category" >
@@ -49,11 +56,5 @@
             android:dependency="lockscreen_media_metadata"
             android:defaultValue="0" />
     </PreferenceCategory>
-
-    <com.pixeldust.settings.preferences.SystemSettingSwitchPreference
-        android:key="lockscreen_charging_animation"
-        android:title="@string/lockscreen_charging_animation_title"
-        android:summary="@string/lockscreen_charging_animation_summary"
-        android:defaultValue="true" />
 
 </PreferenceScreen>

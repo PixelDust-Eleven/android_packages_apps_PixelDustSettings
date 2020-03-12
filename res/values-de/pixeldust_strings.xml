@@ -180,6 +180,10 @@
 
     <!-- Charging animation -->
     <string name="lockscreen_charging_animation_title">Ladeanimation</string>
-    <string name="lockscreen_charging_animation_summary">Eine schicke Animation anzeigen, wenn das Gerät aufgeladen wird</string>
+    <string name="lockscreen_charging_animation_flash">Blitz</string>
+    <string name="lockscreen_charging_animation_battery">Akku</string>
+    <string name="lockscreen_charging_animation_drop">Tropfen</string>
+    <string name="lockscreen_charging_animation_explosion">Explosion</string>
+    <string name="lockscreen_charging_animation_water">Wasser</string>
 
 </resources>
