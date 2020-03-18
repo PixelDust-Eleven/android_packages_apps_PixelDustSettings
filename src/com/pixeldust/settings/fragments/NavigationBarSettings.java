@@ -48,22 +48,27 @@ import java.util.List;
 public class NavigationBarSettings extends SettingsPreferenceFragment {
 
     private static final String GESTURE_SYSTEM_NAVIGATION = "gesture_system_navigation";
+    private static final String PIXEL_NAV_ANIMATION = "pixel_nav_animation";
 
     private Preference mGestureSystemNavigation;
+    private SwitchPreference mPixelNavAnimation;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
         addPreferencesFromResource(R.xml.pixeldust_settings_navigation);
+        final PreferenceScreen prefScreen = getPreferenceScreen();
 
         mGestureSystemNavigation = (Preference) findPreference(GESTURE_SYSTEM_NAVIGATION);
+        mPixelNavAnimation = (SwitchPreference) findPreference(PIXEL_NAV_ANIMATION);
         if (PixeldustUtils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
             mGestureSystemNavigation.setSummary(getString(R.string.legacy_navigation_title));
         } else if (PixeldustUtils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton")) {
             mGestureSystemNavigation.setSummary(getString(R.string.swipe_up_to_switch_apps_title));
         } else {
             mGestureSystemNavigation.setSummary(getString(R.string.edge_to_edge_navigation_title));
+            prefScreen.removePreference(mPixelNavAnimation);
         }
     }
 
