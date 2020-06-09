@@ -18,4 +18,11 @@
     android:title="@string/misc_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!-- Pulse -->
+    <Preference
+        android:key="pulse"
+        android:title="@string/pulse_settings"
+        android:summary="@string/pulse_settings_summary"
+        android:fragment="com.pixeldust.settings.fragments.PulseSettings" />
+
 </PreferenceScreen>

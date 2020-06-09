@@ -81,10 +81,10 @@
             android:icon="@drawable/ic_settings_notifications"/>
 
         <!-- Misc -->
-        <!--Preference
+        <Preference
             android:key="misc_category"
             android:title="@string/misc_title" 
             android:fragment="com.pixeldust.settings.fragments.MiscSettings"
-            android:icon="@drawable/ic_settings_miscs"/-->
+            android:icon="@drawable/ic_settings_miscs"/>
 
 </PreferenceScreen>
