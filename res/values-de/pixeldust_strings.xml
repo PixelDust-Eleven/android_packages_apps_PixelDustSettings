@@ -314,4 +314,11 @@
     <string name="always_on_display_schedule_sunrise">Sonnenaufgang</string>
     <string name="always_on_display_schedule_mixed_sunset">Von Sonnenuntergang bis zu einer bestimmten Zeit einschalten</string>
     <string name="always_on_display_schedule_mixed_sunrise">Von einer bestimmten Zeit bis zum Sonnenaufgang einschalten</string>
+
+    <!--  Volume Panel Plugin   -->
+    <string name="volume_panel">Stil des Lautstärke-Panels</string>
+    <string name="volume_panel_aosp">AOSP</string>
+    <string name="volume_panel_compact">Kompakt</string>
+    <string name="volume_panel_oreo">Oreo</string>
+    <string name="volume_panel_tiled">Gekachelt</string>
 </resources>
