@@ -98,4 +98,7 @@
     <!-- Navbar tuner -->
     <string name="navbar_tuner_title">Tuner für Navigationsleiste</string>
 
+    <!-- Lockscreen icons -->
+    <string name="lockscreen_tuner_title">Verknüpfungen auf dem Sperrbildschirm</string>
+
 </resources>
