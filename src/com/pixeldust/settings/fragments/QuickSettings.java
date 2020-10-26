@@ -50,7 +50,7 @@ public class QuickSettings extends SettingsPreferenceFragment {
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.pixeldust_settings_power);
+        addPreferencesFromResource(R.xml.pixeldust_settings_quicksettings);
     }
 
     @Override
@@ -65,7 +65,7 @@ public class QuickSettings extends SettingsPreferenceFragment {
                 public List<SearchIndexableResource> getXmlResourcesToIndex(
                         Context context, boolean enabled) {
                     final SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.pixeldust_settings_power;
+                    sir.xmlResId = R.xml.pixeldust_settings_quicksettings;
                     return Arrays.asList(sir);
                 }
 
