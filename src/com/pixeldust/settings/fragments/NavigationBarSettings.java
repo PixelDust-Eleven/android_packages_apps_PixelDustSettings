@@ -48,11 +48,9 @@ import java.util.List;
 public class NavigationBarSettings extends SettingsPreferenceFragment {
 
     private static final String GESTURE_SYSTEM_NAVIGATION = "gesture_system_navigation";
-    private static final String NAVBAR_TUNER = "navbar_tuner";
     private static final String PIXEL_NAV_ANIMATION = "pixel_nav_animation";
 
     private Preference mGestureSystemNavigation;
-    private Preference mNavbarTuner;
     private SwitchPreference mPixelNavAnimation;
 
     @Override
@@ -63,8 +61,6 @@ public class NavigationBarSettings extends SettingsPreferenceFragment {
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
         mGestureSystemNavigation = (Preference) findPreference(GESTURE_SYSTEM_NAVIGATION);
-        mNavbarTuner = (Preference) findPreference(NAVBAR_TUNER);
-
         mPixelNavAnimation = (SwitchPreference) findPreference(PIXEL_NAV_ANIMATION);
         if (PixeldustUtils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
             mGestureSystemNavigation.setSummary(getString(R.string.legacy_navigation_title));
@@ -72,7 +68,6 @@ public class NavigationBarSettings extends SettingsPreferenceFragment {
             mGestureSystemNavigation.setSummary(getString(R.string.swipe_up_to_switch_apps_title));
         } else {
             mGestureSystemNavigation.setSummary(getString(R.string.edge_to_edge_navigation_title));
-            prefScreen.removePreference(mNavbarTuner);
             prefScreen.removePreference(mPixelNavAnimation);
         }
     }
