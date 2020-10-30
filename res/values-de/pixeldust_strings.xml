@@ -113,4 +113,8 @@
     <string name="pixel_navbar_anim_title">Pixel Animation</string>
     <string name="pixel_navbar_anim_summary">Animation der Home-Taste aktivieren</string>
 
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_charging_current_title">Zusatzinfo zum Ladevorgang</string>
+    <string name="lockscreen_charging_current_summary">Die vom System ermittelte Ladespannung, Stromstärke und Akkutemperatur während des Ladevorgangs auf dem Sperrbildschirm anzeigen</string>
+
 </resources>

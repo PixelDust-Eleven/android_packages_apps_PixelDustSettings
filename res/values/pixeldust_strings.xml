@@ -115,4 +115,8 @@
     <string name="pixel_navbar_anim_title">Pixel animation</string>
     <string name="pixel_navbar_anim_summary">Toggle home button animation</string>
 
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_charging_current_title">Battery info</string>
+    <string name="lockscreen_charging_current_summary">Display negotiated charger max current-voltage and battery temperature on lockscreen while charging</string>
+
 </resources>
