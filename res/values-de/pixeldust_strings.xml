@@ -117,4 +117,11 @@
     <string name="lockscreen_charging_current_title">Zusatzinfo zum Ladevorgang</string>
     <string name="lockscreen_charging_current_summary">Die vom System ermittelte Ladespannung, Stromstärke und Akkutemperatur während des Ladevorgangs auf dem Sperrbildschirm anzeigen</string>
 
+    <!-- Statusbar double tap to sleep -->
+    <string name="double_tap_to_sleep_title">Statusleiste 2x tippen für Ruhemodus</string>
+    <string name="double_tap_to_sleep_summary">Die Statusleiste zweimal antippen, um das Gerät in den Ruhemodus zu versetzen</string>
+    <!-- Lockscreen double tap to sleep -->
+    <string name="double_tap_sleep_lockscreen_title">Sperrbildschirm 2x tippen für Ruhemodus</string>
+    <string name="double_tap_sleep_lockscreen_summary">Zweimal irgendwo auf dem Sperrbildschirm tippen, um das Gerät in den Ruhemodus zu versetzen</string>
+
 </resources>
