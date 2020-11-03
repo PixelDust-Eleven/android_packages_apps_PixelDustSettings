@@ -25,11 +25,11 @@
             android:icon="@drawable/ic_settings_statusbar"/>
 
         <!-- Quick Settings -->
-        <Preference
+        <!--Preference
             android:key="quicksettings_category"
             android:title="@string/quicksettings_title"
             android:fragment="com.pixeldust.settings.fragments.QuickSettings"
-            android:icon="@drawable/ic_settings_quicksettings"/>
+            android:icon="@drawable/ic_settings_quicksettings"/-->
 
         <!-- Buttons -->
         <Preference
@@ -67,24 +67,24 @@
             android:icon="@drawable/ic_settings_powermenu"/>
 
         <!-- Recents -->
-        <Preference
+        <!--Preference
             android:key="recents_category"
             android:title="@string/recents_title"
             android:fragment="com.pixeldust.settings.fragments.RecentsSettings"
-            android:icon="@drawable/ic_settings_recents"/>
+            android:icon="@drawable/ic_settings_recents"/-->
 
         <!-- Notifications -->
-        <Preference
+        <!--Preference
             android:key="notifications_category"
             android:title="@string/notifications_title"
             android:fragment="com.pixeldust.settings.fragments.NotificationsSettings"
-            android:icon="@drawable/ic_settings_notifications"/>
+            android:icon="@drawable/ic_settings_notifications"/-->
 
         <!-- Misc -->
-        <Preference
+        <!--Preference
             android:key="misc_category"
             android:title="@string/misc_title" 
             android:fragment="com.pixeldust.settings.fragments.MiscSettings"
-            android:icon="@drawable/ic_settings_miscs"/>
+            android:icon="@drawable/ic_settings_miscs"/-->
 
 </PreferenceScreen>
