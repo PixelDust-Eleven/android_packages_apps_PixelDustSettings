@@ -126,4 +126,19 @@
     <string name="double_tap_sleep_lockscreen_title">Sperrbildschirm 2x tippen für Ruhemodus</string>
     <string name="double_tap_sleep_lockscreen_summary">Zweimal irgendwo auf dem Sperrbildschirm tippen, um das Gerät in den Ruhemodus zu versetzen</string>
 
+    <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Musikwiedergabe steuern</string>
+    <string name="volume_rocker_music_controls_summary">Lautstärketasten lang drücken, um Tracks zu wechseln, während der Bildschirm ausgeschaltet ist</string>
+
+    <!-- Volume rocker wake -->
+    <string name="volume_rocker_wake_title">Bildschirm einschalten per Lautstärketaste</string>
+    <string name="volume_rocker_wake_summary">Drücken der Lautstärketaste beendet den Ruhezustand</string>
+
+    <!-- Volume rocker cursor control -->
+    <string name="cursor_section_header">Cursor</string>
+    <string name="volume_key_cursor_control_title">Cursor per Lautstärketaste steuern</string>
+    <string name="volume_key_cursor_control_off">Ausgeschaltet</string>
+    <string name="volume_key_cursor_control_on">Lautstärke hoch/runter verschiebt den Cursor nach links/rechts</string>
+    <string name="volume_key_cursor_control_on_reverse">Lautstärke hoch/runter verschiebt den Cursor nach rechts/links</string>
+
 </resources>
