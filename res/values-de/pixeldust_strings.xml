@@ -170,4 +170,12 @@
     <string name="media_art_title">Albumcover</string>
     <string name="media_art_summary">Albumcover auf dem Sperrbildschirm anzeigen</string>
 
+    <!-- Lockscreen album art filter -->
+    <string name="lockscreen_albumart_filter_title">Albumcover Anzeigefilter</string>
+    <string name="lockscreen_albumart_filter_none">Aus</string>
+    <string name="lockscreen_albumart_filter_grayscale">Graustufen</string>
+    <string name="lockscreen_albumart_filter_tint">Akzent getönt</string>
+    <string name="lockscreen_albumart_filter_blur">Verschwommen</string>
+    <string name="lockscreen_albumart_filter_grayblur">Graustufen und verschwommen</string>
+
 </resources>
