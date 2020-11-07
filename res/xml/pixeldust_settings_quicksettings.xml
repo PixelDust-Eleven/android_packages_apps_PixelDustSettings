@@ -26,4 +26,11 @@
         android:entryValues="@array/quick_pulldown_values"
         android:defaultValue="0" />
 
+    <!-- QS drag handle -->
+    <com.pixeldust.settings.preferences.SystemSettingSwitchPreference
+        android:key="qs_show_drag_handle"
+        android:title="@string/qs_show_drag_handle_title"
+        android:summary="@string/qs_show_drag_handle_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>

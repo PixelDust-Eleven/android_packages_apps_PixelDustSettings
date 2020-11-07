@@ -191,4 +191,8 @@
     <string name="lockscreen_charging_animation_explosion">Explosion</string>
     <string name="lockscreen_charging_animation_water">Wasser</string>
 
+    <!-- QS drag handle -->
+    <string name="qs_show_drag_handle_title">Anfasser</string>
+    <string name="qs_show_drag_handle_summary">Anfasser unter dem QS Panel anzeigen</string>
+
 </resources>

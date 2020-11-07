@@ -193,4 +193,8 @@
     <string name="lockscreen_charging_animation_explosion">Explosion</string>
     <string name="lockscreen_charging_animation_water">Water</string>
 
+    <!-- QS drag handle -->
+    <string name="qs_show_drag_handle_title">Drag handle</string>
+    <string name="qs_show_drag_handle_summary">Show drag handle below the quick settings panel</string>
+
 </resources>
