@@ -24,13 +24,10 @@
         android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
         settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController" />
 
-    <!--Preference
-        android:key="navbar_tuner"
-        android:title="@string/navbar_tuner_title" >
-        <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.NavBarActivity" />
-    </Preference-->
+    <com.pixeldust.settings.preferences.SecureSettingSwitchPreference
+            android:key="sysui_nav_bar_inverse"
+            android:title="@string/navbar_invert_layout_title"
+            android:defaultValue="false" />
 
     <com.pixeldust.settings.preferences.SystemSettingSwitchPreference
         android:key="pixel_nav_animation"

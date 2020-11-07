@@ -85,9 +85,6 @@
     <string name="battery_light_full_color">Fast voller Akkustand</string>
     <string name="battery_light_reallyfull_color">Voller Akkustand</string>
 
-    <!-- Navbar tuner -->
-    <string name="navbar_tuner_title">Tuner für Navigationsleiste</string>
-
     <!-- Lockscreen icons -->
     <string name="lockscreen_tuner_title">Verknüpfungen auf dem Sperrbildschirm</string>
 
@@ -98,6 +95,9 @@
     <string name="torch_power_button_gesture_dt">Zum Einschalten der Taschenlampe Ein-/Aus-Taste doppelt drücken (kleine Verzögerung zum einfachem Tippen)</string>
     <string name="torch_power_button_gesture_dt_toast">Die Geste für den Einsprung zur Kamera ist jetzt deaktiviert</string>
     <string name="torch_power_button_gesture_lp">Ein-/Aus-Taste lange drücken zum Anschalten der Taschenlampe</string>
+
+    <!-- Navbar options -->
+    <string name="navbar_invert_layout_title">Layout umkehren</string>
 
     <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Pixel Animation</string>
