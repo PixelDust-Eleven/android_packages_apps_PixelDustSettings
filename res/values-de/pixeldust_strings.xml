@@ -25,7 +25,7 @@
     <string name="misc_title">Verschiedenes</string>
     <string name="navbar_title">Navigationsleiste</string>
     <string name="notifications_title">Benachrichtigungen</string>
-    <string name="powermenu_title">Power-Menü</string>
+    <string name="powermenu_title">Ein-/Aus-Menü</string>
     <string name="quicksettings_title">Schnelleinstellungen</string>
     <string name="recents_title">Anwendungsverlauf</string>
     <string name="statusbar_title">Statusleiste</string>
@@ -54,8 +54,8 @@
     <string name="statusbar_tuner_summary">Anzeige der Systemsymbole in der Statusleiste anpassen</string>
 
     <!-- Global Actions -->
-    <string name="global_actions_title">Power Menü</string>
-    <string name="global_actions_summary">Festlegen was nach Drücken der Power-Taste angezeigt werden soll</string>
+    <string name="global_actions_title">Ein-/Aus-Menü</string>
+    <string name="global_actions_summary">Festlegen welche Aktionen nach dem Drücken der Ein-/Aus-Taste angezeigt werden sollen</string>
     <string name="global_actions_power">Herunterfahren</string>
     <string name="global_actions_restart">Neustart</string>
     <string name="global_actions_airplane">Flugmodus</string>
