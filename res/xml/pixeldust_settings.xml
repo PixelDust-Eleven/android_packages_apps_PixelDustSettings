@@ -74,11 +74,11 @@
             android:icon="@drawable/ic_settings_recents"/-->
 
         <!-- Notifications -->
-        <!--Preference
+        <Preference
             android:key="notifications_category"
             android:title="@string/notifications_title"
             android:fragment="com.pixeldust.settings.fragments.NotificationsSettings"
-            android:icon="@drawable/ic_settings_notifications"/-->
+            android:icon="@drawable/ic_settings_notifications"/>
 
         <!-- Misc -->
         <!--Preference
