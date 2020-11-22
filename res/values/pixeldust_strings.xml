@@ -197,4 +197,8 @@
     <string name="qs_show_drag_handle_title">Drag handle</string>
     <string name="qs_show_drag_handle_summary">Show drag handle below the quick settings panel</string>
 
+    <!-- Less boring heads up option -->
+    <string name="less_boring_heads_up_title">Less boring heads up</string>
+    <string name="less_boring_heads_up_summary">Quickly disable heads up for all apps but keep them enabled for dialer and messaging apps</string>
+
 </resources>
