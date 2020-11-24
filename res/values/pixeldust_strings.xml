@@ -217,7 +217,6 @@
 
     <!-- Battery Styles -->
     <string name="battery_style_category_title">Statusbar battery indicator</string>
-    <string name="battery_percent_title">Battery percent</string>
 
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Battery style</string>
