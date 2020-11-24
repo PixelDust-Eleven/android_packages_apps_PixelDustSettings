@@ -41,12 +41,13 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
 
+import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.android.internal.logging.nano.MetricsProto;
+import com.pixeldust.settings.preferences.CustomSeekBarPreference;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -77,6 +78,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private ListPreference mClockDatePosition;
 
     private ListPreference mNetTrafficLocation;
+    private CustomSeekBarPreference mThreshold;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -156,6 +158,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         int location = Settings.System.getIntForUser(resolver,
                 Settings.System.NETWORK_TRAFFIC_VIEW_LOCATION, 0, UserHandle.USER_CURRENT);
         mNetTrafficLocation.setOnPreferenceChangeListener(this);
+
+        int value = Settings.System.getIntForUser(resolver,
+                Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, 1, UserHandle.USER_CURRENT);
+        mThreshold = (CustomSeekBarPreference) findPreference("network_traffic_autohide_threshold");
+        mThreshold.setValue(value);
+        mThreshold.setOnPreferenceChangeListener(this);
 
         int netMonitorEnabled = Settings.System.getIntForUser(resolver,
                 Settings.System.NETWORK_TRAFFIC_STATE, 0, UserHandle.USER_CURRENT);
@@ -269,6 +277,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                         Settings.System.NETWORK_TRAFFIC_STATE, 0, UserHandle.USER_CURRENT);
                 updateTrafficLocation(location);
             }
+            return true;
+        } else if (preference == mThreshold) {
+            int val = (Integer) objValue;
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, val,
+                    UserHandle.USER_CURRENT);
             return true;
         }
         return false;
