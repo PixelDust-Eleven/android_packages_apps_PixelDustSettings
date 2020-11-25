@@ -210,6 +210,11 @@
     <string name="traffic_statusbar">Statusleiste</string>
     <string name="traffic_expanded_statusbar">Erweiterte Statusleiste</string>
     <string name="network_traffic_autohide_threshold_title">Netzwerkaktivität anzeigen ab (KB/s)</string>
+    <string name="network_traffic_type">Anzeigemodus auswählen</string>
+    <string name="show_network_traffic_dynamic">Dynamisch (Up-/Download)</string>
+    <string name="show_network_traffic_up">Upload</string>
+    <string name="show_network_traffic_down">Download</string>
+    <string name="show_network_traffic_all">Beides</string>
 
     <!-- NavBar Visibility -->
     <string name="navbar_visibility">Navigationsleiste anzeigen</string>

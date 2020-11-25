@@ -83,6 +83,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
     private ListPreference mNetTrafficLocation;
     private CustomSeekBarPreference mThreshold;
+    private ListPreference mNetTrafficType;
 
     private ListPreference mBatteryPercent;
     private ListPreference mBatteryStyle;
@@ -192,6 +193,13 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             updateTrafficLocation(0); 
         }
         mNetTrafficLocation.setSummary(mNetTrafficLocation.getEntry());
+
+        int type = Settings.System.getIntForUser(resolver,
+                Settings.System.NETWORK_TRAFFIC_TYPE, 0, UserHandle.USER_CURRENT);
+        mNetTrafficType = (ListPreference) findPreference("network_traffic_type");
+        mNetTrafficType.setValue(String.valueOf(type));
+        mNetTrafficType.setSummary(mNetTrafficType.getEntry());
+        mNetTrafficType.setOnPreferenceChangeListener(this);
 
         // Battery Styles
         int batterystyle = Settings.System.getIntForUser(getContentResolver(),
@@ -333,6 +341,14 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             mBatteryStyle.setSummary(mBatteryStyle.getEntries()[index]);
             mBatteryPercent.setEnabled(
                     batterystyle != BATTERY_STYLE_TEXT && batterystyle != BATTERY_STYLE_HIDDEN);
+            return true;
+        } else if (preference == mNetTrafficType) {
+            int val = Integer.valueOf((String) objValue);
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.NETWORK_TRAFFIC_TYPE, val,
+                    UserHandle.USER_CURRENT);
+            int index = mNetTrafficType.findIndexOfValue((String) objValue);
+            mNetTrafficType.setSummary(mNetTrafficType.getEntries()[index]);
             return true;
         } else if (preference == mBatteryPercent) {
             mBatteryPercentValue = Integer.parseInt((String) objValue);
