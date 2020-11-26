@@ -215,6 +215,8 @@
     <string name="show_network_traffic_up">Upload</string>
     <string name="show_network_traffic_down">Download</string>
     <string name="show_network_traffic_all">Beides</string>
+    <string name="network_traffic_arrow">Richtungspfeile anzeigen</string>
+    <string name="network_traffic_arrow_summary">Richtungspfeile bei Netzwerkaktivität anzeigen</string>
 
     <!-- NavBar Visibility -->
     <string name="navbar_visibility">Navigationsleiste anzeigen</string>
