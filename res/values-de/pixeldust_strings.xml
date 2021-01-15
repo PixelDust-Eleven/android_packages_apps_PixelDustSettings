@@ -317,7 +317,8 @@
 
     <!--  Volume Panel Plugin   -->
     <string name="volume_panel">Stil des Lautstärke-Panels</string>
-    <string name="volume_panel_aosp">AOSP</string>
+    <string name="volume_panel_stock">Standard</string>
+    <string name="volume_panel_aosp">AOSP Erweitert</string>
     <string name="volume_panel_compact">Kompakt</string>
     <string name="volume_panel_oreo">Oreo</string>
     <string name="volume_panel_tiled">Gekachelt</string>

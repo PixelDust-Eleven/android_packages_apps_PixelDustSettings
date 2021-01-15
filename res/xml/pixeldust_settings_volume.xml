@@ -22,7 +22,7 @@
         android:title="@string/volume_panel"
         android:entries="@array/volume_panel_entries"
         android:entryValues="@array/volume_panel_values"
-        android:defaultValue="@string/volume_panel_aosp_val" />
+        android:defaultValue="@string/volume_panel_stock_val" />
 
     <com.pixeldust.settings.preferences.SystemSettingSwitchPreference
         android:key="volume_button_music_control"
