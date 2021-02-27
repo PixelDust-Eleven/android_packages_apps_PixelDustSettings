@@ -36,6 +36,7 @@
     <string name="reset">Zurücksetzen</string>
     <string name="cancel">Abbrechen</string>
     <string name="save">Speichern</string>
+    <string name="disabled">Deaktiviert</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Farbwahl</string>
@@ -305,4 +306,9 @@
     <string name="volume_steps_system_title">Lautstärkestufen: System</string>
     <string name="volume_steps_voice_call_title">Lautstärkestufen: Sprachanruf</string>
     <string name="volume_steps_reset">Zurücksetzen</string>
+
+    <!-- AOD Schedule -->
+    <string name="always_on_display_schedule_title">"Always on display" Zeitplan</string>
+    <string name="always_on_display_schedule_sunset">Sonnenuntergang</string>
+    <string name="always_on_display_schedule_sunrise">Sonnenaufgang</string>
 </resources>
