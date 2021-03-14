@@ -53,14 +53,12 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
     private static final String LAYOUT_SETTINGS = "navbar_layout_views";
     private static final String NAVIGATION_BAR_INVERSE = "navbar_inverse_layout";
     private static final String NAVBAR_VISIBILITY = "navbar_visibility";
-    private static final String NAVIGATION_BAR_KEYS = "navigation_bar_menu_arrow_keys";
 
     private SwitchPreference mNavbarVisibility;
     private Preference mGestureSystemNavigation;
     private SwitchPreference mPixelNavAnimation;
     private Preference mLayoutSettings;
     private SwitchPreference mSwapNavButtons;
-    private Preference mNavbarArrowKeys;
 
     private boolean mIsNavSwitchingMode = false;
     private Handler mHandler;
@@ -76,7 +74,6 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
         mPixelNavAnimation = (SwitchPreference) findPreference(PIXEL_NAV_ANIMATION);
         mLayoutSettings = (Preference) findPreference(LAYOUT_SETTINGS);
         mSwapNavButtons = (SwitchPreference) findPreference(NAVIGATION_BAR_INVERSE);
-        mNavbarArrowKeys = (Preference) findPreference(NAVIGATION_BAR_KEYS);
 
         if (!PixeldustUtils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
             prefScreen.removePreference(mLayoutSettings);
@@ -90,7 +87,6 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
             mGestureSystemNavigation.setSummary(getString(R.string.edge_to_edge_navigation_title));
             prefScreen.removePreference(mPixelNavAnimation);
             prefScreen.removePreference(mSwapNavButtons);
-            prefScreen.removePreference(mNavbarArrowKeys);
         }
 
         mNavbarVisibility = (SwitchPreference) findPreference(NAVBAR_VISIBILITY);
