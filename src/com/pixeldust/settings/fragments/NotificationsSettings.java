@@ -41,21 +41,14 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.android.internal.logging.nano.MetricsProto;
 
-import com.pixeldust.settings.preferences.SystemSettingMasterSwitchPreference;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 @SearchIndexable
-public class NotificationsSettings extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
-
-    private static final String GAMING_MODE_ENABLED = "gaming_mode_enabled";
+public class NotificationsSettings extends SettingsPreferenceFragment {
 
     private Preference mChargingLeds;
-    private Preference mAlertSlider;
-    private SystemSettingMasterSwitchPreference mGamingMode;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -68,28 +61,6 @@ public class NotificationsSettings extends SettingsPreferenceFragment implements
         if (!getResources().getBoolean(R.bool.has_notification_light)) {
             prefScreen.removePreference(LightOptions);
         }
-
-        mGamingMode = (SystemSettingMasterSwitchPreference) findPreference(GAMING_MODE_ENABLED);
-        boolean gameEnabled = Settings.System.getInt(
-        getActivity().getApplicationContext().getContentResolver(),
-                Settings.System.GAMING_MODE_ENABLED, 0) == 1;
-        updateGameModeEnabledUpdatePrefs(gameEnabled);
-        mGamingMode.setOnPreferenceChangeListener(this);
-    }
-
-    private void updateGameModeEnabledUpdatePrefs(boolean gameEnabled) {
-        mGamingMode.setChecked(gameEnabled);
-    }
-
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mGamingMode) {
-            boolean gameEnabled = (Boolean) newValue;
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.GAMING_MODE_ENABLED, gameEnabled ? 1 : 0);
-            updateGameModeEnabledUpdatePrefs(gameEnabled);
-            return true;
-        }
-        return false;
     }
 
     @Override
