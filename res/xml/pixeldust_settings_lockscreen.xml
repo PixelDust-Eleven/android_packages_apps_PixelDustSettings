@@ -44,11 +44,6 @@
         android:entryValues="@array/lockscreen_charging_animation_values"
         android:defaultValue="1" />
 
-    <Preference
-        android:key="always_on_display_schedule"
-        android:title="@string/always_on_display_schedule_title"
-        android:fragment="com.pixeldust.settings.fragments.AODSchedule" />
-
     <PreferenceCategory
         android:key="lockscreen_media_category"
         android:title="@string/lockscreen_media_category" >

@@ -310,7 +310,6 @@
     <string name="volume_steps_reset">Zurücksetzen</string>
 
     <!-- AOD Schedule -->
-    <string name="always_on_display_schedule_title">"Always on display" Zeitplan</string>
     <string name="always_on_display_schedule_sunset">Sonnenuntergang</string>
     <string name="always_on_display_schedule_sunrise">Sonnenaufgang</string>
     <string name="always_on_display_schedule_mixed_sunset">Von Sonnenuntergang bis zu einer bestimmten Zeit einschalten</string>
