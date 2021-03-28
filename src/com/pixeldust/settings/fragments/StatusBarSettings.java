@@ -83,6 +83,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private ListPreference mNetTrafficLocation;
     private CustomSeekBarPreference mThreshold;
     private ListPreference mNetTrafficType;
+    private SwitchPreference mArrows;
 
     private ListPreference mBatteryPercent;
     private ListPreference mBatteryStyle;
@@ -180,6 +181,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         mThreshold = (CustomSeekBarPreference) findPreference("network_traffic_autohide_threshold");
         mThreshold.setValue(value);
         mThreshold.setOnPreferenceChangeListener(this);
+
+        // Network traffic arrows
+        mArrows = (SwitchPreference) findPreference("network_traffic_arrow");
 
         int netMonitorEnabled = Settings.System.getIntForUser(resolver,
                 Settings.System.NETWORK_TRAFFIC_STATE, 0, UserHandle.USER_CURRENT);
@@ -358,10 +362,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         switch(location){ 
             case 0:
                 mThreshold.setEnabled(false);
+                mArrows.setEnabled(false);
                 break;
             case 1:
             case 2:
                 mThreshold.setEnabled(true);
+                mArrows.setEnabled(true);
                 break;
             default: 
                 break;
