@@ -323,6 +323,10 @@
     <string name="volume_panel_oreo">Oreo</string>
     <string name="volume_panel_tiled">Gekachelt</string>
 
+    <!-- Volume panel extras -->
+    <string name="volume_panel_tint_title">Aktive Lautstärkeleiste tönen</string>
+    <string name="volume_panel_tint_summary">Die aktive Lautstärkeleiste mit einem Farbverlauf tönen</string>
+
     <!-- App List -->
     <string name="profile_choose_app">Anwendung auswählen</string>
     <string name="dialog_delete_title">Löschen</string>
