@@ -322,6 +322,7 @@
     <string name="volume_panel_compact">Kompakt</string>
     <string name="volume_panel_oreo">Oreo</string>
     <string name="volume_panel_tiled">Gekachelt</string>
+    <string name="volume_panel_miui">MIUI Kompakt</string>
 
     <!-- Volume panel extras -->
     <string name="volume_panel_tint_title">Aktive Lautstärkeleiste tönen</string>
