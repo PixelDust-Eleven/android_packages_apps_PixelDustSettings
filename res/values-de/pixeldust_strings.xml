@@ -363,4 +363,8 @@
     <string name="gaming_mode_notifications_all_title">Toast und Benachrichtigung anzeigen</string>
     <string name="gaming_mode_dynamic_title">Dynamischer Modus</string>
     <string name="gaming_mode_dynamic_summary">Das System versucht, Spiele automatisch zu erkennen und hinzuzufügen</string>
+
+    <!-- Screenshot compression  -->
+    <string name="screenshot_compression_title">Screenshot Größe</string>
+    <string name="screenshot_compression_summary">Screenshots komprimieren (Verringert die Bildqualität)</string>
 </resources>
