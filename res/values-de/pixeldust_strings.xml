@@ -325,6 +325,7 @@
     <string name="volume_panel_miui">MIUI Kompakt</string>
 
     <!-- Volume panel extras -->
+    <string name="volpanel_category_title">Lautstärke-Panel</string>
     <string name="volume_panel_tint_title">Aktive Lautstärkeleiste tönen</string>
     <string name="volume_panel_tint_summary">Die aktive Lautstärkeleiste mit einem Farbverlauf tönen</string>
 
