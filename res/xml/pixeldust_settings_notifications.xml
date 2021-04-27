@@ -38,6 +38,15 @@
 
     </PreferenceCategory>
 
+    <!-- Notification background opacity -->
+    <com.pixeldust.settings.preferences.SystemSettingSeekBarPreference
+        android:key="notification_bg_alpha"
+        android:title="@string/notification_alpha_title"
+        android:defaultValue="255"
+        android:max="255"
+        settings:min="0"
+        settings:units="" />
+
     <com.pixeldust.settings.preferences.SystemSettingSwitchPreference
         android:key="less_boring_heads_up"
         android:title="@string/less_boring_heads_up_title"
