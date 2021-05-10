@@ -370,4 +370,7 @@
 
     <!-- Notification background opacity -->
     <string name="notification_alpha_title">Deckkraft des Hintergrunds von Benachrichtigungen</string>
+
+    <!-- QuickSettings panel opacity -->
+    <string name="qs_panel_alpha_title">Deckkraft des QS Panel</string>
 </resources>
