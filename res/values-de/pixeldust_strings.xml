@@ -372,9 +372,12 @@
     <string name="notification_alpha_title">Deckkraft des Hintergrunds von Benachrichtigungen</string>
 
     <!-- QuickSettings panel opacity -->
-    <string name="qs_panel_alpha_title">Deckkraft des QS Panel</string>
+    <string name="qs_panel_alpha_title">Deckkraft des QS Panels</string>
 
     <!-- Notification guts kill app button -->
     <string name="notification_guts_kill_app_button_title">App-Beenden-Button</string>
     <string name="notification_guts_kill_app_button_summary">Im Longpress-Menü von Benachrichtigungen einen App-Beenden-Button anzeigen</string>
+
+    <!-- Power menu background opacity -->
+    <string name="power_menu_alpha_title">Deckkraft des Ein-/Aus-Menüs</string>
 </resources>
